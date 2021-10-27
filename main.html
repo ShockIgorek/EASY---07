@@ -1,34 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NIKE X MMW TRAINING 4.0</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NIKE X MMW TRAINING 4.0</title>
+  <link rel="stylesheet" href="./test.css">
 </head>
-<body>
-    <header class="header">
-        <!-- часть с хедером, бургер меню илюстрация -->
-    </header>
-    <main class="main">
-        <section class="description">
-            <!-- о коллекции картинка, текст -->
-        </section>
-        <section class="products">
-            <!-- тут будет слайдер -->
-        </section>
-        <section class="discipline">
-            какая-то херь и картинка
-        </section>
-    </main>
-<footer class="footer">
-    
-</footer>
+
+<body class="page">
+  <header class="header">
+    <button type="button" class="burger__button"></button>
+    <h1 class="header__title">
+      NIKE X MMW
+      TRAINING 4.0
+    </h1>
+  </header>
+  <main class="main">
+    <section class="description">
+      <!-- о коллекции картинка, текст -->
+      <h2 class="description__title">
+        О коллекции
+      </h2>
+      <p class="description__paragraph">
+        Разум или тело, 
+        движение или покой, 
+        спорт или отдых — дисциплина всегда 
+        остаётся движущей силой прогресса. 
+        Открой для себя мир невероятной концентрации и преданности делу. 
+        Дизайнер Мэттью Уильямс, визажистка Исамайя Ффренч и музыкант 
+        Ив Тюмор показывают, каких результатов можно достичь благодаря упорству.
+      </p>
+      <!-- заполнить альт -->
+      <img class="description__image" src="./images/descriotion-ilustration.png">
+      <img class="description__ilustration" src="./images/3people.png">
+      <h4>
+        Тренинг — это не просто 
+        физическая активность
+      </h4>
+      <p>
+        Это практика для тела и разума, 
+        за которой стоят концентрация и дисциплина. 
+        Мэттью Уильямс выражает эту идею через чередование 
+        движения и осознанности. Исамайя Ффренч исследует 
+        свою способность совершать тяжёлые повторяющиеся действия с помощью йоги. 
+        Ив Тюмор превращает силовые тренировки в эксперимент по испытанию силы духа.
+      </p>
+    </section>
+    <section class="products">
+      <h2>товары</h2>
+      <div class="slider">
+        <div class="slider__item">
+          <img class="slider__image"  alt="" src="./images/slider-1 (1).png">
+          <a href="#" class="slider__link">купить</a>
+        </div>
+        <div class="slider__item">
+          <img class="slider__image"  alt="" src="./images/slider-2.png">
+          <a href="#" class="slider__link">купить</a>
+        </div>
+        <div class="slider__item">
+          <img class="slider__image"  alt="" src="./images/(2).png">
+          <a href="#" class="slider__link">купить</a>
+        </div>
+        <div class="slider__item">
+          <img class="slider__image"  alt="" src="./images/(3).png">
+          <a href="#" class="slider__link">купить</a>
+        </div>
+        <div class="slider__item">
+          <img class="slider__image" alt="" src="./images/slider-1 (1).png">
+          <a href="#" class="slider__link">купить</a>
+        </div>
+        <div class="slider__item">
+          <img class="slider__image"  alt="" src="./images/slider-2.png">
+          <a href="#" class="slider__link">купить</a>
+        </div>
+        <div class="slider__item">
+          <img class="slider__image"  alt="" src="./images/(2).png">
+          <a href="#" class="slider__link">купить</a>
+        </div>
+        <div class="slider__item">
+          <img class="slider__image"  alt="" src="./images/(3).png">
+          <a href="#" class="slider__link">купить</a>
+        </div>
+        <button class="scroll__button_left" type="button">влево</button>
+        <button class="scroll__button_right" type="button">вправо</button>
+      </div>
+    </section>
+    <section class="discipline">
+      какая-то херь и картинка
+    </section>
+  </main>
+  <footer class="footer">
+
+  </footer>
 
 
 
 
 
-    </main>
+  </main>
+
+
+  <script src="./scripts/slider.js"></script>
 </body>
+
 </html>
