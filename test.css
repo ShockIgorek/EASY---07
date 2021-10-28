@@ -138,11 +138,31 @@
     line-height: 24px;
     letter-spacing: 0em;
     text-align: left;
+}
+
+.discipline {
+    padding: 80px 0 80px 0;
 
 }
 
+.discipline__text {
+    max-width: 695px;
+    padding: 0 20px 80px 725px;
+    font-family: Golos;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+}
 
-
+.discipline__image {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 810px;
+}
 
 
 
