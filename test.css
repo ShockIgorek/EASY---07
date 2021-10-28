@@ -164,7 +164,56 @@
     height: 810px;
 }
 
+.footer {
+    padding: 80px 20px 80px 20px;
+}
 
+.footer__title {
+    text-transform: uppercase;
+    margin: 0;
+    font-family: Golos;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 80px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.footer__text {
+    margin: 0;
+    padding: 40px 0 40px 0;
+    font-family: Golos;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+/* добавить стилизацию форм */
+
+
+.footer__button {
+    border: 1px solid #FFF;
+    background-color: #0A0A0A;
+    border-radius: 100px;
+    width: 170px;
+    height: 40px;
+    color: #FFF;
+    font-family: Golos;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+    opacity: 1;
+    transition: opacity .4s ease-in-out;
+}
+.footer__button:hover {
+    opacity: .7;
+}
 
 
 
