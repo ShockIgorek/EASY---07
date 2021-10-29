@@ -1,0 +1,11 @@
+.description {
+    background-color: $bgColor;
+    padding-top: 80px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-areas:
+        'title title'
+        'paragraph image'
+        'ilustration ilustration'
+        'subtitle text';
+}

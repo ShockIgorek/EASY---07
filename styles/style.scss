@@ -1,0 +1,29 @@
+@import "../vendor/fonts.css" ;
+@import "./modules/variables.scss";
+
+@import "./modules/blocks/page/page.scss";
+
+@import "./modules/blocks/header/header.scss";
+@import "./modules/blocks/header/__title/header__title.scss";
+
+@import "./modules/blocks/description/description.scss";
+@import "./modules/blocks/description/__title/description__title.scss";
+@import "./modules/blocks/description/__paragraph/description__paragraph.scss";
+@import "./modules/blocks/description/__image/description__image.scss";
+@import "./modules/blocks/description/__ilustration/description__ilustration.scss";
+@import "./modules/blocks/description/__subtitle/description__subtitle.scss";
+@import "./modules/blocks/description/__text/description__text.scss";
+// @import "";
+@import "./modules/blocks/discipline/discipline.scss";
+@import "./modules/blocks/discipline/__text/discipline__text.scss";
+@import "./modules/blocks/discipline/__image/discipline__image.scss";
+// @import "";
+// @import "";
+// @import "";
+// @import "";
+// @import "";
+// @import "";
+// @import "";
+// @import "";
+// @import "";
+// @import "";

@@ -1,0 +1,145 @@
+@import "../vendor/fonts.css";
+.page {
+  background-color: #0A0A0A;
+  color: #FFF;
+  font-family: "Golos", helvetica, Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
+.header {
+  width: 1440px;
+  height: 810px;
+  display: flex;
+  background-image: url("../images/main-ilustration.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.header__title {
+  margin: 0;
+  width: 460px;
+  font-family: "Golos", helvetica, Arial, sans-serif;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 80px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #0A0A0A;
+  padding: 208px 0 0 20px;
+}
+
+.description {
+  background-color: #0A0A0A;
+  padding-top: 80px;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-areas: "title title" "paragraph image" "ilustration ilustration" "subtitle text";
+}
+
+.description__title {
+  grid-area: title;
+  margin: 0;
+  font-family: "Golos", helvetica, Arial, sans-serif;
+  color: #FFF;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 80px;
+  text-transform: uppercase;
+  letter-spacing: 0em;
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.description__paragraph {
+  grid-area: paragraph;
+  font-family: "Golos", helvetica, Arial, sans-serif;
+  color: #FFF;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  padding: 0 250px 0 20px;
+}
+
+.description__image {
+  justify-self: end;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 460px;
+  height: 246px;
+}
+
+.description__ilustration {
+  grid-area: ilustration;
+  margin-top: 80px;
+  justify-self: center;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.description__subtitle {
+  margin: 0;
+  padding: 80px 0 0 20px;
+  max-width: 460px;
+  grid-area: subtitle;
+  font-family: "Golos", helvetica, Arial, sans-serif;
+  color: #FFF;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 40px;
+  letter-spacing: 0em;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.description__text {
+  margin: 0;
+  max-width: 690px;
+  padding: 80px 20px 80px 0;
+  justify-self: end;
+  font-family: "Golos", helvetica, Arial, sans-serif;
+  color: #FFF;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.discipline {
+  padding: 80px 0 80px 0;
+}
+
+.discipline__text {
+  max-width: 695px;
+  padding: 0 20px 80px 725px;
+  font-family: "Golos", helvetica, Arial, sans-serif;
+  color: #FFF;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.discipline__image {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 810px;
+}/*# sourceMappingURL=style.css.map */
