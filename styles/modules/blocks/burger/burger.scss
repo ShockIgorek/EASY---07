@@ -1,0 +1,14 @@
+.burger {
+    position: relative;
+    width: 1440px;
+    position: absolute;
+    display: block;
+    height: 810px;
+    background-color: $bgColor;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
