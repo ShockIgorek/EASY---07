@@ -11,3 +11,20 @@
     color: $bgColor;
     padding: 208px 0 0 20px;
 }
+
+@media screen and (max-width: 1439px) {
+    .header__title {
+        padding: 168px 0 0 20px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .header__title {
+        padding: 84px 0 0 20px;
+        font-size: 32px;
+        line-height: 40px;
+        letter-spacing: 0em;
+        text-align: left;
+
+    }
+}

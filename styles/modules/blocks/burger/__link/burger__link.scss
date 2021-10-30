@@ -11,5 +11,23 @@
     line-height: 40px;
     letter-spacing: 0em;
     text-align: center;
+}
+
+@media screen and (max-width: 1439px) {
+    .burger__link {
+        font-size: 24px;
+        line-height: 32px;
+
+    }
+
+}
+@media screen and (max-width: 767px) {
+    .burger__link {
+        font-size: 20px;
+        line-height: 28px;
+        letter-spacing: 0em;
+        
+
+    }
 
 }
