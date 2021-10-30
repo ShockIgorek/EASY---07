@@ -33,7 +33,8 @@
 
 .owl-carousel .owl-stage-outer {
   position: relative;
-  overflow: hidden;
+  overflow-x: scroll;
+  overflow-y: hidden;
   -webkit-transform: translate3d(0, 0, 0)
 }
 
@@ -49,7 +50,7 @@
 
 .owl-carousel .owl-item {
   min-height: 1px;
-  height: 467px;
+  height: 400px;
   float: left;
   -webkit-backface-visibility: hidden;
   -webkit-touch-callout: none
@@ -233,4 +234,29 @@
   z-index: 1;
   height: 100%;
   width: 100%
+}
+
+.owl-stage-outer::-webkit-scrollbar {
+  width: 12px;
+  height: 4px;
+  /* ширина scrollbar */
+}
+
+.owl-stage-outer::-webkit-scrollbar-track {
+  background: #292929;
+  /* цвет дорожки */
+}
+
+.owl-stage-outer::-webkit-scrollbar-thumb {
+  background-color: #EBEBEB;
+  /* цвет плашки */
+  border-radius: 100px;
+  /* закругления плашки */
+}
+
+.owl-next {
+  width: 100px;
+  height: 100px;
+  background-color: chartreuse;
+  position: absolute;
 }
