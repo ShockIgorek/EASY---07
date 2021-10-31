@@ -15,6 +15,8 @@
 @import "./modules/blocks/header/header.scss";
 @import "./modules/blocks/header/__title/header__title.scss";
 
+@import "./modules/blocks/main/main.scss";
+
 @import "./modules/blocks/description/description.scss";
 @import "./modules/blocks/description/__title/description__title.scss";
 @import "./modules/blocks/description/__paragraph/description__paragraph.scss";
@@ -29,7 +31,8 @@
 @import "./modules/blocks/slider/__item/slider__item.scss";
 @import "./modules/blocks/slider/__image/slider__image.scss";
 @import "./modules/blocks/slider/__button/slider__button.scss";
-// @import "";
+@import "./modules/blocks/slider/__left-button/slider__left-button.scss";
+@import "./modules/blocks/slider/__right-button/slider__right-button.scss";
 
 @import "./modules/blocks/discipline/discipline.scss";
 @import "./modules/blocks/discipline/__text/discipline__text.scss";

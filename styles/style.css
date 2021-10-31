@@ -218,6 +218,27 @@
     text-align: left;
   }
 }
+.main {
+  background-color: #0A0A0A;
+  color: #FFF;
+  font-family: "Golos", helvetica, Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  max-width: 1440px;
+}
+
+@media screen and (max-width: 1439px) {
+  .main {
+    max-width: 768px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .main {
+    max-width: 320px;
+  }
+}
 .description {
   background-color: #0A0A0A;
   padding-top: 80px;
@@ -388,6 +409,7 @@
 }
 .products {
   margin: 0;
+  position: relative;
 }
 
 .products__title {
@@ -414,12 +436,23 @@
   flex-direction: row;
   padding: 0;
   margin: 40px 0 80px 0;
-  max-width: 1420px;
+  max-width: 1440px;
   height: 440px;
   overflow-x: scroll;
   overflow-y: hidden;
 }
 
+@media screen and (max-width: 1439px) {
+  .slider {
+    max-width: 748px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .slider {
+    margin: 20px 0 40px 0;
+    max-width: 300px;
+  }
+}
 .slider::-webkit-scrollbar {
   width: 12px;
   height: 4px;
@@ -447,9 +480,17 @@
   list-style-type: none;
 }
 
+@media screen and (max-width: 767px) {
+  .slider__item {
+    width: 300px;
+    height: 400px;
+    margin-bottom: 20px;
+    list-style-type: none;
+  }
+}
 .slider__image {
   background-position: center;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
@@ -474,12 +515,68 @@
   height: 40px;
   border: none;
   border-radius: 100px;
+  opacity: 1;
+  cursor: pointer;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.slider__button:hover {
+  opacity: 0.7;
+}
+
+.slider__left-button {
+  position: absolute;
+  bottom: 300px;
+  left: 20px;
+  z-index: 4;
+  background-image: url("../images/arrow-left.svg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  opacity: 1;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.slider__left-button:hover {
+  opacity: 0.7;
+}
+
+.slider__right-button {
+  position: absolute;
+  bottom: 300px;
+  right: 20px;
+  z-index: 4;
+  background-image: url("../images/arrow-right.svg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  opacity: 1;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.slider__right-button:hover {
+  opacity: 0.7;
 }
 
 .discipline {
   padding: 0 0 80px 0;
 }
 
+@media screen and (max-width: 767px) {
+  .discipline {
+    padding: 0 0 40px 0;
+  }
+}
 .discipline__text {
   margin: 0;
   max-width: 695px;
@@ -494,6 +591,18 @@
   text-align: left;
 }
 
+@media screen and (max-width: 1439px) {
+  .discipline__text {
+    max-width: 359px;
+    padding: 0 20px 80px 389px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .discipline__text {
+    max-width: 280px;
+    padding: 0 20px 40px 20px;
+  }
+}
 .discipline__image {
   width: 100%;
   background-position: center;
@@ -515,7 +624,7 @@
   }
 }
 .footer {
-  padding: 80px 20px 80px 20px;
+  padding: 0 20px 80px 20px;
 }
 
 .footer__title {
@@ -531,6 +640,12 @@
   text-align: center;
 }
 
+@media screen and (max-width: 767px) {
+  .footer__title {
+    font-size: 32px;
+    line-height: 40px;
+  }
+}
 .footer__text {
   margin: 0;
   padding: 40px 0 40px 0;
@@ -544,6 +659,11 @@
   text-align: center;
 }
 
+@media screen and (max-width: 767px) {
+  .footer__text {
+    padding: 20px 0 20px 0;
+  }
+}
 .footer__form {
   margin: 0;
   padding: 0;
@@ -556,6 +676,14 @@
   display: block;
 }
 
+@media screen and (max-width: 1439px) {
+  .footer__subscribe {
+    margin: 0 0 0 calc(20px / 2);
+    padding: 0;
+    border: none;
+    display: block;
+  }
+}
 .footer__button {
   box-sizing: border-box;
   border: 1px solid #FFF;
@@ -574,6 +702,12 @@
   transition: opacity 0.4s ease-in-out;
 }
 
+@media screen and (max-width: 767px) {
+  .footer__button {
+    margin-top: 10px;
+    width: 280px;
+  }
+}
 .footer__button:hover {
   opacity: 0.7;
 }

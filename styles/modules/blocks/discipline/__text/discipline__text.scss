@@ -11,3 +11,17 @@
     letter-spacing: 0em;
     text-align: left;
 }
+@media screen and (max-width: 1439px) {
+    .discipline__text {
+        max-width: 359px;
+        padding: 0 20px 80px 389px;
+    }
+    
+}
+@media screen and (max-width: 767px) {
+    .discipline__text {
+        max-width: 280px;
+        padding: 0 20px 40px 20px;
+    }
+    
+}
