@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import "../vendor/fonts.css";
 .page {
   background-color: #0A0A0A;
@@ -185,7 +186,7 @@
 }
 @media screen and (max-width: 767px) {
   .header {
-    width: 302px;
+    width: 300px;
     height: 360px;
   }
 }
@@ -409,16 +410,78 @@
   }
 }
 .slider {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
   margin: 40px 0 80px 0;
-  max-width: 1440px;
+  max-width: 1420px;
   height: 440px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+.slider::-webkit-scrollbar {
+  width: 12px;
+  height: 4px;
+  /* ширина scrollbar */
+}
+
+.slider::-webkit-scrollbar-track {
+  background: #292929;
+  /* цвет дорожки */
+}
+
+.slider::-webkit-scrollbar-thumb {
+  background-color: #EBEBEB;
+  /* цвет плашки */
+  border-radius: 100px;
+  /* закругления плашки */
+}
+
+.slider__item {
+  position: relative;
+  display: block;
+  width: 326px;
+  height: 400px;
+  margin-bottom: 40px;
+  list-style-type: none;
+}
+
+.slider__image {
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.slider__button {
+  margin: 0;
+  padding: 4px 24px;
+  background-color: #0A0A0A;
+  color: #FFF;
+  position: absolute;
+  z-index: 2;
+  font-family: "Golos", helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  left: 20px;
+  bottom: 20px;
+  width: 116px;
+  height: 40px;
+  border: none;
+  border-radius: 100px;
 }
 
 .discipline {
-  padding: 80px 0 80px 0;
+  padding: 0 0 80px 0;
 }
 
 .discipline__text {
+  margin: 0;
   max-width: 695px;
   padding: 0 20px 80px 725px;
   font-family: "Golos", helvetica, Arial, sans-serif;
@@ -432,12 +495,25 @@
 }
 
 .discipline__image {
+  width: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
   height: 810px;
 }
 
+@media screen and (max-width: 1439px) {
+  .discipline__image {
+    width: 748px;
+    height: 432px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .discipline__image {
+    width: 302px;
+    height: 180px;
+  }
+}
 .footer {
   padding: 80px 20px 80px 20px;
 }

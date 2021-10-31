@@ -24,10 +24,11 @@
 @import "./modules/blocks/description/__text/description__text.scss";
 @import "./modules/blocks/products/products.scss";
 @import "./modules/blocks/products/__title/products__title.scss";
+
 @import "./modules/blocks/slider/slider.scss";
-// @import "";
-// @import "";
-// @import "";
+@import "./modules/blocks/slider/__item/slider__item.scss";
+@import "./modules/blocks/slider/__image/slider__image.scss";
+@import "./modules/blocks/slider/__button/slider__button.scss";
 // @import "";
 
 @import "./modules/blocks/discipline/discipline.scss";
