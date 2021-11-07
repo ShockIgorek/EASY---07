@@ -11,6 +11,11 @@
     line-height: 40px;
     letter-spacing: 0em;
     text-align: center;
+    opacity: 1;
+    transition: opacity .4s ease-in-out;
+}
+.burger__link:hover {
+    opacity: .7;
 }
 
 @media screen and (max-width: 1439px) {

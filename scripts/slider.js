@@ -1,15 +1,19 @@
-$(document).ready(function () {
-  $(".owl-carousel").owlCarousel({
-    nav: true,
-    dots: false,
-    Horizontal: true,
-    items: 5.5,
-    margin: 0,
-    loop: false,
-    autoplay: true,
-    autoplayHoverPause : true,
-    autoHeight : false,
-    startPosition: 1,
-    autoplayTimeout: 10000, //скороость смены слайдов
-  });
+const scrollContainer = document.querySelector('.slider');
+const buttonLeft = document.querySelector('.slider__left-button');
+const buttonRight = document.querySelector('.slider__right-button');
+
+
+scrollContainer.addEventListener('wheel', (evt) => {
+    evt.preventDefault();
+    scrollContainer.scrollLeft += evt.deltaY;
+});
+
+buttonLeft.addEventListener('click', (evt) => {
+    evt.preventDefault();
+    scrollContainer.scrollLeft -= 360;
+});
+
+buttonRight.addEventListener('click', (evt) => {
+    evt.preventDefault();
+    scrollContainer.scrollLeft += 360;
 });

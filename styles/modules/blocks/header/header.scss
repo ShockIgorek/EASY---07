@@ -1,5 +1,5 @@
 .header {
-    width: 100%;
+    width: 1420px;
     height: 810px;
     display: flex;
     background-image: url('../images/main-ilustration.png');
@@ -11,13 +11,13 @@
 
 @media screen and (max-width: 1439px) {
     .header {
-        width: 748px;
+        width: calc(100vw - 20px);
         height: 810px;
     }
 }
 @media screen and (max-width: 767px) {
     .header {
-        width: 300px;
+        width: calc(100vw - 20px);
         height: 360px;
     }
     

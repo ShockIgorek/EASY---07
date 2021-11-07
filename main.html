@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8">
@@ -7,40 +7,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>NIKE X MMW TRAINING 4.0</title>
   <link rel="stylesheet" href="./styles/style.css">
-  <link rel="stylesheet" href="./vendor/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
-  <link rel="stylesheet" href="./vendor/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
 </head>
 
 <body class="page">
   <header class="header">
+    <h1 class="header__title">
+      NIKE X MMW
+      TRAINING 4.0
+    </h1>
     <button type="button" class="burger__button"></button>
     <nav class="burger">
       <ul class="burger__list">
         <li class="burger__item">
-          <a href="#" class="burger__link">
+          <a href="#collection" class="burger__link">
             О коллекции
           </a>
         </li>
         <li class="burger__item">
-          <a href="#" class="burger__link">
+          <a href="#products" class="burger__link">
             Товары
           </a>
         </li>
         <li class="burger__item">
-          <a href="#" class="burger__link">
+          <a href="#submit" class="burger__link">
             Подписаться
           </a>
         </li>
       </ul>
     </nav>
-    <h1 class="header__title">
-      NIKE X MMW
-      TRAINING 4.0
-    </h1>
   </header>
   <main class="main">
     <section class="description">
-      <h2 class="description__title">
+      <h2 class="description__title"  id="collection">
         О коллекции
       </h2>
       <p class="description__paragraph">
@@ -52,12 +50,12 @@
         Дизайнер Мэттью Уильямс, визажистка Исамайя Ффренч и музыкант
         Ив Тюмор показывают, каких результатов можно достичь благодаря упорству.
       </p>
-      <img class="description__image" src="./images/descriotion-ilustration.png">
-      <img class="description__ilustration" src="./images/3people.png">
-      <h4 class="description__subtitle">
+      <img class="description__image" src="./images/descriotion-ilustration.png" alt="чуеловеку плохо">
+      <img class="description__ilustration" src="./images/3people.png" alt="три разных фотографии людей">
+      <h3 class="description__subtitle">
         Тренинг — это не просто
         физическая активность
-      </h4>
+      </h3>
       <p class="description__text">
         Это практика для тела и разума,
         за которой стоят концентрация и дисциплина.
@@ -68,7 +66,7 @@
       </p>
     </section>
     <section class="products">
-      <h2 class="products__title">товары</h2>
+      <h2 class="products__title" id="products">товары</h2>
       <button class="slider__left-button" type="button"></button>
       <button class="slider__right-button" type="button"></button>
       <ul class="slider">
@@ -121,7 +119,6 @@
           <button class="slider__button" type="button">купить</button>
         </li>
       </ul>
-
     </section>
     <section class="discipline">
       <p class="discipline__text">
@@ -132,20 +129,20 @@
         в которой идея дисциплины передается через высочайшее
         качество исполнения и исключительную выразительность.
       </p>
-      <img class="discipline__image" src="./images/footer.png">
+      <img class="discipline__image" src="./images/footer.png" alt="фотографии тренировок">
     </section>
   </main>
   <footer class="footer">
-    <h3 class="footer__title">
+    <h3 class="footer__title" id="submit">
       подписаться
     </h3>
     <p class="footer__text">
       Укажите свой email чтобы быть в курсе даты релиза, и других новостей о коллекции
     </p>
-    <form name="" class="footer__form">
+    <form name="submit" class="footer__form">
       <fieldset class="footer__subscribe">
-        <label for="footer__label">
-          <input class="footer__input" type="email" name="" id="" placeholder="Введите email">
+        <label class="footer__label">
+          <input class="footer__input" type="email" name="email" id="email" placeholder="Введите email">
         </label>
         <button type="submit" class="footer__button">подписаться</button>
       </fieldset>
@@ -155,9 +152,7 @@
     </p>
   </footer>
   <script src="./scripts/burger.js"></script>
-  <!-- <script src="./vendor/jquery-3.6.0.min.js"></script>
-  <script src="./vendor/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
-  <script src="./scripts/slider.js"></script> -->
+  <script src="./scripts/slider.js"></script>
 </body>
 
 </html>
